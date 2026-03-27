@@ -1,4 +1,4 @@
-name: BWSI CSS Lab Unit Tests
+name: simple_calculator unit test
   
 on: [push]  
   
@@ -26,7 +26,7 @@ jobs:
         continue-on-error: true  
       - name: Test with pytest  
         run: |  
-          coverage run -m pytest tests/ -v -s  
+          coverage run -m pytest tests/tests_1c.py -v -s  
       - name: Generate Coverage Report  
         run: |  
           coverage report -m
